@@ -70,3 +70,9 @@
   padding: 8px 12px;
   
 }
+
+body{
+  background-image: url("https://res.cloudinary.com/dlpozl0eb/image/upload/v1631297780/seafood_wallpaper_ymbiaq.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
