@@ -1,0 +1,42 @@
+.header{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.card{
+display: grid;
+height: 500px;
+width: 216px;
+border-radius: 8px;
+gap: 24px;
+/* margin: 0px 24px; */
+/* align-self: stretch; */
+background-color: #EDEDED;
+border: 1px solid red;
+
+grid-auto-flow: column;
+font-size: 20px;
+/* line-height: 10px; */
+text-align: center;
+/* background:  */
+border-radius: 4px; 
+margin-bottom: 8px;
+/* height: 32px;
+width: 184px; */
+border-radius: 4px;
+padding:2px 8px;
+/* justify-content: space-between; */
+}
+.card-container{
+    display: grid;
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+     justify-items: center;
+     /* align-content: center; */
+     grid-auto-flow: column;
+ }
+ body{
+     background-image: url("./BikePics/Bike_Wallpaper.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
