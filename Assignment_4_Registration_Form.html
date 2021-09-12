@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment4.css">
+    <script src="form_validator.js"></script>
+</head>
+<body>
+    <div class="main-form">
+    <form name="student-form" onsubmit="return validateForm()" style="border: 1px solid grey; border-radius: 6px; margin-left: 20px; width: 400px; padding: 30px;
+    height: 70vh; box-shadow: 2px 1px;
+    ">
+        <h2>Student Registration Form</h2>
+        
+        <label for="fname">First Name:</label>
+        <br/>
+        <input type="text" name="fname"  placeholder="Enter your First Name"/>
+        <br/>
+        <label for="lname">Last Name:</label>
+        <br/>
+        <input type="text" name="lname"  placeholder="Enter your Last Name"/>
+        <br/>
+        <label for="email">Email:</label>
+        <br/>
+        <input type="email" name="email" placeholder="Enter your Email"/>
+        <br/>
+        <label for="password">Password:</label>
+        <br/>
+        <input type="password" name="password" placeholder="Enter a Password"/>
+        <br/>
+        <br/>
+        <label for="gender">Gender:</label>
+        <!-- <br/> -->
+        <select name="gender" id="gender" style="opacity: .5;" class="select">
+            <option value="first">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <br/>
+        <h2> Please Select your Subjects:</h2>
+        <input type="checkbox" id="subject1" name="subject1" value="Php">
+        <label for="subject1">PHP</label>
+        <input type="checkbox" id="subject2" name="subject2" value="Python">
+        <label for="subject2">Python</label>
+        <input type="checkbox" id="subject3" name="subject3" value="Javascript">
+        <label for="subject3">Javascript</label>
+        <input type="checkbox" id="subject4" name="subject4" value="Angular">
+        <label for="subject3">Angular</label>
+        <P>Comments:</P>
+        <textarea name="comments" style="width: 300px; height: 75px; opacity: .5; border-radius: 6px;"></textarea>
+        <br/>
+        <br/>
+    
+        <button type="submit" >Submit</button>
+        
+    </form>
+</div>
+</body>
+</html>
