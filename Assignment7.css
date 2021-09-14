@@ -1,0 +1,22 @@
+
+.top-left {
+    display: grid;
+    grid-auto-flow: column;
+    /* flex-grow:0; */
+    width: 200px;
+    border: 1px solid red;
+    /* height: 300px; */
+}
+table{
+    
+    table-layout: fixed;
+    border-collapse:collapse;
+    width: 550px;
+    height: 70vh;
+    margin-top: 70px;
+    /* border-style: 1px solid black; */
+}
+
+.border {
+    border: 2px solid black;
+}

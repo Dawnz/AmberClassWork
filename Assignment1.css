@@ -10,6 +10,7 @@
         display: none;
     }
     .header-title{
+      margin:0;
       text-align: center;
       /* border: 5px dotted navy; */
       /* width: 50%; */
