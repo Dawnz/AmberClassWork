@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h3>What is a Canvas?</h3>
     <div class="canvas-def">
         <p>The canvas tag is used to draw graphics, on the fly, via scripting (usually JavaScript).</p>
 
-         <p>The canvas tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.</p>   
-            
-           <p> Any text inside the canvas element will be displayed in browsers with JavaScript disabled and in browsers that do not support canvas.</p>
+        <p>The canvas tag is transparent, and is only a container for graphics, you must use a script to actually draw
+            the graphics.</p>
+
+        <p> Any text inside the canvas element will be displayed in browsers with JavaScript disabled and in browsers
+            that do not support canvas.</p>
     </div>
     <h3> This is an Example of how Canvas is used</h3>
-                <div class="canvas-info empty">
-                    <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the canvas element.
-                    </canvas>
-                    <h4 class="canvas-desc">This is an Empty Canvas</h4>
-                </div>
-                <div class="canvas-info full">
-                    <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the canvas element.
-                    </canvas>
-                    <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the canvas element.
-                    </canvas>
-                    <canvas id="myCanvas4" width="200" height="200" style="border:1px solid #d3d3d3;">
-                        Your browser does not support the canvas element.
-                    </canvas>
-                    <h4 class="canvas-desc">This is a Canvas using JavaScript. You can create custom words, shapes, colors etc.</h4>
-                </div>
-                <div>
-                    <p>Example of Code using getContext Method:</p>
+    <div class="canvas-info empty">
+        <canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <h4 class="canvas-desc">This is an Empty Canvas</h4>
+    </div>
+    <div class="canvas-info full">
+        <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <canvas id="myCanvas4" width="200" height="200" style="border:1px solid #d3d3d3;">
+            Your browser does not support the canvas element.
+        </canvas>
+        <h4 class="canvas-desc">This is a Canvas using JavaScript. You can create custom words, shapes, colors etc.</h4>
+    </div>
+    <div>
+        <p>Example of Code using getContext Method:</p>
 
-                        <p>var c = document.getElementById("myCanvas");</p>
-                        <p>var ctx = c.getContext("2d");</p>
-                        <p>ctx.fillStyle = "#FF0000";</p>
-                        <p>p>ctx.fillRect(0, 0, 80, 100);</p>
-                     
-                        
-                </div>
-                <script src="canvas_assignment.js"></script>
+        <p>var c = document.getElementById("myCanvas");</p>
+        <p>var ctx = c.getContext("2d");</p>
+        <p>ctx.fillStyle = "#FF0000";</p>
+        <p>p>ctx.fillRect(0, 0, 80, 100);</p>
+
+
+    </div>
+    <script src="canvas_assignment.js"></script>
 
 </body>
+
 </html>
