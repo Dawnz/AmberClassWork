@@ -3,3 +3,13 @@
     /* align-items: center; */
     justify-content: center;
 }
+.student-form{
+    background-color: lavenderblush;
+    
+}
+
+/* .student-form > */
+.student-form > .content {
+    border-radius: 4px;
+    width: 100%;
+}
