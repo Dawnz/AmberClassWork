@@ -3,17 +3,23 @@
     align-content: center;
     justify-content: center;
 }
+.card:hover{
+ opacity: 1;
+}
+.card-pic{
+    border-radius: 50%;
+}
 .card{
 display: grid;
-height: 500px;
+/* height: 500px; */
 width: 216px;
 border-radius: 8px;
 gap: 24px;
 /* margin: 0px 24px; */
 /* align-self: stretch; */
 background-color: #EDEDED;
-border: 1px solid red;
-
+/* border: 1px solid red; */
+opacity: 0.6;
 grid-auto-flow: column;
 font-size: 20px;
 /* line-height: 10px; */
@@ -40,3 +46,34 @@ padding:2px 8px;
      background-repeat: no-repeat;
      background-size: cover;
  }
+ .form-content {
+     display: grid;
+     gap: 20px;
+     justify-content: center;
+ }
+ .form {
+    border: 1px solid grey; 
+    border-radius: 10px; 
+    margin-left: 20px; 
+    width: 400px; 
+    padding: 30px;
+    box-shadow: 2px 1px;
+    background-color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+    opacity: 0.9;
+    
+ }
+ .form1 {
+     height: 410px;
+ }
+ .form2 {
+     height: 500px;
+ }
+ a{
+     text-decoration: none;
+ }
+ a, a:visited, a:hover, a:active {
+    color: inherit;
+  }

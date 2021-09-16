@@ -21,31 +21,132 @@
 
 
         <div class="card">
-            <div>
-                <h4 class="card-header">Road Bike</h4>
-                <img src="./BikePics/road-bike-card.jpg" alt="road bike" width="200px" height="250px">
-            </div>
+            <a href="#reg-form">
+                <div>
+
+                    <h4 class="card-header">Road Bike</h4>
+                    <img class="card-pic" src="./BikePics/road-bike-card.jpg" alt="road bike" width="200px"
+                        height="250px">
+
+                </div>
+            </a>
 
 
         </div>
         <div class="card">
-            <div>
-                <h4 class="card-header">Mountain Bike</h4>
-                <img src="./BikePics/mountain-bike-card.jpg" alt="road bike" width="200px" height="250px">
-            </div>
+            <a href="#reg-form">
+                <div>
+                    <h4 class="card-header">Mountain Bike</h4>
+                    <img class="card-pic" src="./BikePics/mountain-bike-card.jpg" alt="road bike" width="200px"
+                        height="250px">
+                </div>
+            </a>
 
 
         </div>
         <div class="card">
-            <div>
-                <h4 class="card-header">CycloCross Bike</h4>
-                <img src="./BikePics/cyclocross-bike-card.jpg" alt="road bike" width="200px" height="250px">
-            </div>
+            <a href="#reg-form">
+                <div>
+                    <h4 class="card-header">CycloCross Bike</h4>
+                    <img class="card-pic" src="./BikePics/cyclocross-bike-card.jpg" alt="road bike" width="200px"
+                        height="250px">
+                </div>
+            </a>
 
 
         </div>
 
     </div>
+    <div class="form-content">
+
+
+        <form name="student-form2" id="reg-form" class="form form2" onsubmit="return validateForm()">
+            <h2>Bike Rental Form</h2>
+
+            <label for="fname">First Name:</label>
+            <br />
+            <input type="text" name="fname" placeholder="Enter your First Name" />
+            <br />
+            <label for="lname">Last Name:</label>
+            <br />
+            <input type="text" name="lname" placeholder="Enter your Last Name" />
+            <br />
+            <!-- <label for="bike-name">Bike Name:</label>
+            <br />
+            <input type="text" name="bike-name" placeholder="Enter Bike Name" />
+            <br /> -->
+            <label for="bike-year">Bike Year:</label>
+            <br />
+            <input type="text" name="bike-year" placeholder="Enter Bike Year" />
+            <br />
+            <label for="bike-model">Bike Model:</label>
+            <br />
+            <input type="text" name="bike-model" placeholder="Enter Bike Model" />
+            <br />
+
+            <br />
+            <h4> Please Select your Rental Periods :</h4>
+            <input type="checkbox" id="rent-option-1" name="rent-option-1" value="One Day">
+            <label for="subject1">One Day</label>
+            <input type="checkbox" id="rent-option-2" name="rent-option-2" value="One Week">
+            <label for="subject2">One Week</label>
+            <input type="checkbox" id="rent-option-3" name="rent-option-3" value="One FortNight">
+            <label for="subject3">Two Weeks</label>
+            <input type="checkbox" id="rent-option-4" name="rent-option-4" value="One Month">
+            <label for="subject3">One Month</label>
+            <h4>Special Requests:</h4>
+            <textarea name="comments" style="width: 300px; height: 75px; opacity: .5; border-radius: 6px;"></textarea>
+            <br />
+            <br />
+
+            <button type="submit">Submit</button>
+
+        </form>
+        <form name="reg-form" id="reg-form" class="form form1" onsubmit="return validateForm()">
+            <h2>Bike Registration Form</h2>
+
+            <label for="fname">First Name:</label>
+            <br />
+            <input type="text" name="fname" placeholder="Enter your First Name" />
+            <br />
+            <label for="lname">Last Name:</label>
+            <br />
+            <input type="text" name="lname" placeholder="Enter your Last Name" />
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" name="email" placeholder="Enter your Email" />
+            <br />
+            <label for="password">Password:</label>
+            <br />
+            <input type="password" name="password" placeholder="Enter a Password" />
+            <br />
+            <br />
+            <label for="bike-type">Bike Type:</label>
+            <!-- <br/> -->
+            <select name="bike-type" id="bike_type" style="opacity: .5;" class="select">
+                <option value="first">Please Select</option>
+                <option value="road">Road Bike</option>
+                <option value="mountain">Mountain Bike</option>
+                <option value="cyclocross">CycloCross Bike</option>
+            </select>
+            <br />
+            <br />
+            <label for="bike-name">Bike Name:</label>
+            <br />
+            <input type="text" name="bike-name" placeholder="Enter the Bike's Name" />
+            <br />
+            <label for="bike-brand">Bike Brand:</label>
+            <br />
+            <input type="text" name="bike-brand" placeholder="Enter the Bike's Brand" />
+            <br />
+            <br />
+            <br />
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
 
 </body>
 
