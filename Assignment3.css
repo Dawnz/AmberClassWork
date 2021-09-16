@@ -1,0 +1,24 @@
+.canvas-content{
+    grid-area: canvas;
+    background-color: chocolate;
+}
+.article-content{
+    grid-area:article;
+    background-color: cornflowerblue;
+}
+.frame-content{
+    grid-area:frame;
+    background-color: pink;
+}
+.anchor-content{
+    grid-area:anchor;
+    background-color: greenyellow;
+}
+.main-container{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "canvas frame"
+    "article anchor";
+    grid-template-columns: 60% 40%;
+}
