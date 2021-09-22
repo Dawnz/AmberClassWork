@@ -1,0 +1,70 @@
+.main{
+    background: rgb(0,24,36);
+    background: linear-gradient(324deg, rgba(27,125,165,1) 58%, rgba(0,250,255,1) 77%);
+    border-radius: 12px;
+    padding: 32px;
+    display: grid;
+    grid-template-areas: 
+    "Header Header"
+    "Education Education"
+    "Hobbies Interests"
+    ;
+    justify-content: space-around;
+}
+body{
+    background-color: black;
+}
+.header-title{
+    grid-area: Header;
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.education-title{
+    text-align: center;
+}
+.institutions{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+}
+.education{
+    grid-area: Education;
+ 
+}
+.Hobbies{
+    grid-area: Hobbies;
+}
+.Interests{
+    grid-area: Interests;
+}
+.header-image{
+    
+    /* width: 100%; */
+    justify-self: center;
+}
+.handles {
+    margin-top: 12px;
+    display: grid;
+    grid-auto-flow: Column;
+    justify-content: space-around;
+    width: 100%;
+    /* border: 1px solid rgb(165, 165, 184); */
+    
+}
+
+.fa-linkedin {  
+    background: #007bb5;  
+    color: white;  
+  } 
+
+  .fa-instagram {  
+    background: #125688;  
+    color: white;  
+  }
+  .fa:hover {  
+    opacity: 0.9;  
+}  
+
