@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assignment10.css">
+    <title>Document</title>
+    <script src="image_magnifier.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dawnz Veggie Store!</h1>
+            <div class="menu">
+                <a href="#">Breakfast</a>
+                <a href="#">Lunch</a>
+                <a href="#">Dessert</a>
+                <a href="#">Refreshment</a>
+
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="main-title">
+                <h1 style="text-align: center;">Please select your Meal</h1>
+            </div>
+            <div class="slideContainer">
+                <div class="meal-title">
+                    Breakfast
+                    <!-- <button type="button">Breakfast</button> -->
+                </div>
+                <div class="mySlides">
+
+                    <a href="https://downshiftology.com/recipes/goat-cheese-zucchini-fritters">
+                        <figure>
+                            <img src="FoodPics/Zucchini-Fritters.jpg" alt="Zucchini-Fritters" width="200px"
+                                height="200px">
+                            <figcaption>Zucchini Fritters</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/avocado-egg-salad">
+                        <figure>
+                            <img src="FoodPics/Avocado-Egg-Salad.jpg" alt="Avocado-Egg-Salad" width="200px"
+                                height="200px">
+                            <figcaption>Avocado Egg Salad</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/curried-egg-salad">
+                        <figure>
+                            <img src="FoodPics/Curried-Egg-Salad.jpg" alt="Curried-Egg-Salad" width="200px"
+                                height="200px">
+                            <figcaption>Curried Egg Salad</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/healthy-zucchini-muffins/">
+                        <figure>
+                            <img src="FoodPics/Healthy-Zucchini-Muffins.jpg" alt="Zucchini-Muffins" width="200px"
+                                height="200px">
+                            <figcaption>Zucchini Muffins</figcaption>
+                        </figure>
+                    </a>
+
+                </div>
+                <div class="meal-title">
+                    Lunch
+                    <!-- <button type="button">Lunch</button> -->
+                </div>
+                <div class="mySlides">
+
+                    <a href="https://downshiftology.com/recipes/cabbage-soup/">
+                        <figure>
+                            <img src="FoodPics/Cabbage-Soup.jpg" alt="cabbage-soup" width="200px" height="200px">
+                            <figcaption>Cabbage Soup</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/butternut-squash-and-eggplant-stir-fry/">
+                        <figure>
+                            <img src="FoodPics/Butternut-Squash-Eggplant-Stir-Fry.jpg"
+                                alt="butternut-squash-and-eggplant-stir-fry" width="200px" height="200px">
+                            <figcaption>Squash & Eggplant Stir Fry</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/garlic-roasted-potatoes">
+                        <figure>
+                            <img src="FoodPics/Garlic-Roasted-Potatoes.jpg" alt="garlic-roasted-potatoes" width="200px"
+                                height="200px">
+                            <figcaption>Garlic Roasted Potatoes</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/cauliflower-fried-rice/">
+                        <figure>
+                            <img src="FoodPics/Cauliflower-Fried-Rice.jpg" alt="cauliflower-fried-rice" width="200px"
+                                height="200px">
+                            <figcaption>Cauliflower Fried Rice</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="meal-title">
+                    Supper / Dessert
+                    <!-- <button type="button">Supper/Dessert</button> -->
+                </div>
+                <div class="mySlides">
+
+                    <a href="https://downshiftology.com/recipes/classic-fruit-salad">
+                        <figure>
+                            <img src="FoodPics/Fruit-Salad.jpg" alt="Fruit Salad" width="200px" height="200px"
+                                onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                            <figcaption>Fruit Salad</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/gluten-free-lemon-bars">
+                        <figure>
+                            <img src="FoodPics/Lemon-Bars.jpg" alt="Lemon-Bars" width="200px" height="200px"
+                                onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                            <figcaption>Lemon Bars</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/banana-bread-energy-balls">
+                        <figure>
+                            <img src="FoodPics/Banana-Bread-Energy-Balls.jpg" alt="Banana Bread Energy Balls"
+                                width="200px" height="200px" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                            <figcaption>Banana Bread Energy Balls</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/paleo-zucchini-bread">
+                        <figure>
+                            <img src="FoodPics/Paleo-Zucchini-Bread.jpg" alt="Paleo Zucchini Bread" width="200px"
+                                onmouseover="bigImg(this)" onmouseout="normalImg(this)" height="200px">
+                            <figcaption>Paleo Zucchini Bread</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="meal-title">
+                    Refreshment
+                    <!-- <button type="button">Refreshment</button> -->
+                </div>
+                <div class="mySlides">
+
+                    <a href="https://downshiftology.com/recipes/watermelon-smoothie">
+                        <figure>
+                            <img src="FoodPics/Watermelon-Smoothie.jpg" alt="watermelon-smoothie" width="200px"
+                                height="200px">
+                            <figcaption>Zucchini Muffins</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/mandarin-breakfast-smoothie">
+                        <figure>
+                            <img src="FoodPics/Mandarin-Smoothie.jpg" alt="mandarin-breakfast-smoothie" width="200px"
+                                height="200px">
+                            <figcaption>Mandarin Smoothie</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/nutella-hot-chocolate">
+                        <figure>
+                            <img src="FoodPics/Nutella-Hot-Chocolate.jpg" alt="nutella-hot-chocolate" width="200px"
+                                height="200px">
+                            <figcaption> Nutella Hot Chocolate</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://downshiftology.com/recipes/best-hot-chocolate">
+                        <figure>
+                            <img src="FoodPics/Hot-Chocolate.jpg" alt="Hot-Chocolate" width="200px" height="200px">
+                            <figcaption>Regular Hot Chocolate</figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+            <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+
+
+        </div>
+        <div class="footer">
+
+        </div>
+
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("meal-title");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "grid") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "grid";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
