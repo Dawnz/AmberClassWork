@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            border-bottom: 1px solid black;
+        }
+
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .crumb {
+            display: inline-block;
+        }
+
+        .crumb a::after {
+            display: inline-block;
+            color: #000;
+            content: '>';
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="crumbs">
+        <ol>
+            <li class="crumb"><a href="https://www.motortrend.com/style/suv/">SUV</a></li>
+            <li class="crumb"><a href="https://toyotajamaica.com/promo/corolla-cross-landing-page/">Toyota</a></li>
+            <li class="crumb">Prado 2020</li>
+        </ol>
+    </nav>
+    <h2 style="text-align: center;">This is a sample info of the current page</h2>
+</body>
+
+</html>
