@@ -1,0 +1,18 @@
+body{
+    display: grid;
+    /* align-content: center; */
+    justify-content: center;
+}
+.container{
+    margin-top: 50%;
+    width: 200px;
+    height: 260px;
+    display: grid; 
+    padding: 20px; 
+    gap: 25px; 
+    /* border: 1px solid rgb(160, 160, 161); */
+    background-color: cadetblue;
+    border-radius: 12px;
+    align-self: center;
+    justify-self: center;
+}
