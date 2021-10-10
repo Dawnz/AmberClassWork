@@ -1,0 +1,25 @@
+.combos{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    /* font-size: 10px; */
+}
+.combo {
+    border: 1px solid black;
+}
+/* .val {
+    height: 100%;
+    width: 100%;
+    background: none;
+} */
+.green{
+    border: 1px solid green;
+}
+.red{
+    border: 1px solid red;
+}
+td{
+    height: calc(1/3*100%);
+    width: calc(1/3*100%);
+    font-family: inherit;
+}

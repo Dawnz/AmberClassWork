@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 15</title>
+    <link rel="stylesheet" href="Assignment17.css">
+    <script src="magic_square.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Magic 15</h1>
+        </div>
+        <div class="rules">
+            <h3> Rules of Magic 15:</h3>
+            <ul>
+                <li>Number 5 must be in center of 3x3 Array</li>
+                <li>Odd Numbers adding to 10 must be at the cardinal points ( north south east west)</li>
+                <li>Even numbers adding to 10 must be at the edges</li>
+            </ul>
+        </div>
+        <div class="combinations">
+            <details>
+                <summary>Combinations</summary>
+                <p>Based on calculations, there are 8 different combinations</p>
+                <div class="combos">
+                    <table class="combo 1">
+                        <tr>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    <table class="combo 2">
+                        <tr>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                    <table class="combo 3">
+                        <tr>
+                            <td>2</td>
+                            <td>9</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                    <table class="combo 4">
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    <table class="combo 5">
+                        <tr>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>9</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    <table class="combo 6">
+                        <tr>
+                            <td>8</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    <table class="combo 7">
+                        <tr>
+                            <td>4</td>
+                            <td>9</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>1</td>
+                            <td>6</td>
+                        </tr>
+                    </table>
+                    <table class="combo 8">
+                        <tr>
+                            <td>2</td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>8</td>
+                        </tr>
+                    </table>
+                </div>
+            </details>
+        </div>
+        <div class="main-content">
+            <table class="combo try-it">
+                <tr>
+                    <td class="content row1 col1">
+                        <input type="number" id="1" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row1 col2">
+                        <input type="number" id="2" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row1 col3">
+                        <input type="number" id="3" class="val" onchange="check(this.id)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content row2 col1">
+                        <input type="number" id="4" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row2 col2">
+                        <input type="number" id="5" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row2 col3">
+                        <input type="number" id="6" class="val" onchange="check(this.id)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content row3 col1">
+                        <input type="number" id="7" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row3 col2">
+                        <input type="number" id="8" class="val" onchange="check(this.id)">
+                    </td>
+                    <td class="content row3 col3">
+                        <input type="number" id="9" class="val" onchange="check(this.id)">
+                    </td>
+                </tr>
+            </table>
+            <button type="button" class="btn" onclick=isValid()>Try it!</button>
+
+        </div>
+    </div>
+</body>
+
+</html>
