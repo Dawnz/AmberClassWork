@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 15</title>
     <link rel="stylesheet" href="Assignment17.css">
-    <script src="magic_square.js"></script>
+
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Magic 15</h1>
+            <h1 class="title main-title">Magic 15</h1>
         </div>
         <div class="rules">
-            <h3> Rules of Magic 15:</h3>
+            <h3 class="sub-title"> Rules of Magic 15:</h3>
             <ul>
                 <li>Number 5 must be in center of 3x3 Array</li>
                 <li>Odd Numbers adding to 10 must be at the cardinal points ( north south east west)</li>
@@ -168,45 +168,50 @@
             </details>
         </div>
         <div class="main-content">
-            <table class="combo try-it">
+            <table class="try-it">
                 <tr>
                     <td class="content row1 col1">
-                        <input type="number" id="1" class="val" onchange="check(this.id)">
+                        <input type="number" id="1" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row1 col2">
-                        <input type="number" id="2" class="val" onchange="check(this.id)">
+                        <input type="number" id="2" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row1 col3">
-                        <input type="number" id="3" class="val" onchange="check(this.id)">
+                        <input type="number" id="3" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                 </tr>
                 <tr>
                     <td class="content row2 col1">
-                        <input type="number" id="4" class="val" onchange="check(this.id)">
+                        <input type="number" id="4" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row2 col2">
-                        <input type="number" id="5" class="val" onchange="check(this.id)">
+                        <input type="number" id="5" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row2 col3">
-                        <input type="number" id="6" class="val" onchange="check(this.id)">
+                        <input type="number" id="6" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                 </tr>
                 <tr>
                     <td class="content row3 col1">
-                        <input type="number" id="7" class="val" onchange="check(this.id)">
+                        <input type="number" id="7" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row3 col2">
-                        <input type="number" id="8" class="val" onchange="check(this.id)">
+                        <input type="number" id="8" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                     <td class="content row3 col3">
-                        <input type="number" id="9" class="val" onchange="check(this.id)">
+                        <input type="number" id="9" class="val" onchange="check(this.id)" min="1" max="9">
                     </td>
                 </tr>
             </table>
             <button type="button" class="btn" onclick=isValid()>Try it!</button>
 
+
+
+
         </div>
+        <p id="problems"></p>
     </div>
+    <script src="magic_square.js"></script>
 </body>
 
 </html>

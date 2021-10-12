@@ -1,17 +1,63 @@
+.container,.main-content{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Brush Script MT', cursive;
+    
+}
+.container{
+    background-image: url("./CoolBackgrounds/white-magic-purple-abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+p, li,summary {
+    font-size: 24px;
+}
+
 .combos{
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
     /* font-size: 10px; */
 }
-.combo {
+
+.combo{
     border: 1px solid black;
 }
-/* .val {
+.try-it {
+    margin-top: 12px;
+    /* border: 1px solid black; */
+    height: 500px;
+    /* padding: 5px; */
+    
+    /* gap:8px; */
+    width: 650px;
+    /* display: grid; */
+    
+}
+.title {
+    text-align: center;
+}
+.btn {
+    color: white;
+    background-color: blue;
+    padding: 1px;
+    width: 50%;
+    justify-self: center;
+    margin-top:24px;
+    line-height: 24px;
+}
+.val {
     height: 100%;
-    width: 100%;
+    color: white;
+    font-size: 60px;
+    line-height: 40px;
+    text-align: center;
+    width: calc(100% - 2px);
     background: none;
-} */
+    cursor: pointer;
+}
 .green{
     border: 1px solid green;
 }
