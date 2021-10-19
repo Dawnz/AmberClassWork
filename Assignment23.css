@@ -1,0 +1,19 @@
+.container {
+   display: grid;
+   justify-content: center;
+   font-family: sans-serif;
+   /* justify-self: flex-start; */
+   /* align-items: space-between; */
+}
+.header {
+   text-align: center;
+}
+.shape-title {
+   font-size: 25px;
+}
+
+.main-body {
+   display: grid;
+   grid-template-columns: 1.6fr 1fr;
+   /* border: 1px solid red; */
+}
