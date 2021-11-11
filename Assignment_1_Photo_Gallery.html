@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="Assignment1.css" />
+      <title>Document</title>
+      <script src="./image_uploader.js"></script>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assignment1.css">
-    <title>Document</title>
-    <script src="./image_uploader.js"></script>
-</head>
-
-<body>
-    <div class="Header">
-        <h1 class="header-title">Catch O' the Day</h1>
-    </div>
-    <div class="slideContainer">
-        <div class="mySlides">
+   <body>
+      <div class="Header">
+         <h1 class="header-title">Catch O' the Day</h1>
+      </div>
+      <div class="slideContainer">
+         <div class="mySlides">
             <div class="numberslide">1/4</div>
             <a href="https://unsplash.com/s/photos/anchor">
-                <img src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619076239/6081250411fe5e374cf1ea34.svg"
-                    alt="fish1" width="100%" height="500px">
+               <img
+                  src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619076239/6081250411fe5e374cf1ea34.svg"
+                  alt="fish1"
+                  width="100%"
+                  height="500px"
+               />
             </a>
-
-        </div>
-        <div class="mySlides">
+         </div>
+         <div class="mySlides">
             <div class="numberslide">2/4</div>
             <a href="https://unsplash.com/s/photos/shrimp">
-                <img src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554163/60886fef3ed7227740db04fa.jpg"
-                    alt="fish2" width="100%" height="500px">
+               <img
+                  src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554163/60886fef3ed7227740db04fa.jpg"
+                  alt="fish2"
+                  width="100%"
+                  height="500px"
+               />
             </a>
-        </div>
-        <div class="mySlides">
+         </div>
+         <div class="mySlides">
             <div class="numberslide">3/4</div>
             <a href="https://unsplash.com/s/photos/crab">
-                <img src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554074/60886f973ed7227740db04f8.jpg"
-                    alt="fish3" width="100%" height="500px">
+               <img
+                  src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554074/60886f973ed7227740db04f8.jpg"
+                  alt="fish3"
+                  width="100%"
+                  height="500px"
+               />
             </a>
-        </div>
-        <div class="mySlides">
+         </div>
+         <div class="mySlides">
             <div class="numberslide">4/4</div>
             <a href="https://unsplash.com/s/photos/salmon">
-                <img src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554309/608870813ed7227740db04fd.jpg"
-                    alt="fish3" width="100%" height="500px">
+               <img
+                  src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554309/608870813ed7227740db04fd.jpg"
+                  alt="fish3"
+                  width="100%"
+                  height="500px"
+               />
             </a>
-        </div>
+         </div>
+      </div>
 
-    </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- <div class="caption-container">
+      <!-- <div class="caption-container">
     <p id="caption"></p>
   </div> -->
-    <div class="row">
-        <div class="img-col">
-            <img class="demo small-img"
-                src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619076239/6081250411fe5e374cf1ea34.svg"
-                style="width: 100px; height: 100px;" onclick="currentSlide(1)" alt="fish-thum-1">
-        </div>
-        <div class="img-col">
-            <img class="demo small-img"
-                src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554163/60886fef3ed7227740db04fa.jpg"
-                style="width: 100px; height: 100px;" onclick="currentSlide(2)" alt="fish-thum-2">
-        </div>
-        <div class="img-col">
-            <img class="demo small-img"
-                src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554074/60886f973ed7227740db04f8.jpg"
-                style="width: 100px; height: 100px;" onclick="currentSlide(3)" alt="fish-thum-3">
-        </div>
-        <div class="img-col">
-            <img class="demo small-img"
-                src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554309/608870813ed7227740db04fd.jpg"
-                style="width: 100px; height: 100px;" onclick="currentSlide(4)" alt="fish-thum-4">
-        </div>
-    </div>
-    <div class="upload">
-        <p>Please upload files here:</p>
-        <input type="file" id="submitfile" name="UploadFiles">
-
-    </div>
-    <script src="./slideshow_slider.js"></script>
-</body>
-
+      <div class="row">
+         <div class="img-col">
+            <img
+               class="demo small-img"
+               src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619076239/6081250411fe5e374cf1ea34.svg"
+               style="width: 100px; height: 100px"
+               onclick="currentSlide(1)"
+               alt="fish-thum-1"
+            />
+         </div>
+         <div class="img-col">
+            <img
+               class="demo small-img"
+               src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554163/60886fef3ed7227740db04fa.jpg"
+               style="width: 100px; height: 100px"
+               onclick="currentSlide(2)"
+               alt="fish-thum-2"
+            />
+         </div>
+         <div class="img-col">
+            <img
+               class="demo small-img"
+               src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554074/60886f973ed7227740db04f8.jpg"
+               style="width: 100px; height: 100px"
+               onclick="currentSlide(3)"
+               alt="fish-thum-3"
+            />
+         </div>
+         <div class="img-col">
+            <img
+               class="demo small-img"
+               src="https://res.cloudinary.com/dlpozl0eb/image/upload/v1619554309/608870813ed7227740db04fd.jpg"
+               style="width: 100px; height: 100px"
+               onclick="currentSlide(4)"
+               alt="fish-thum-4"
+            />
+         </div>
+      </div>
+      <div class="upload">
+         <p>Please upload files here:</p>
+         <input type="file" id="submitfile" name="UploadFiles" />
+      </div>
+      <script src="./slideshow_slider.js"></script>
+   </body>
 </html>
