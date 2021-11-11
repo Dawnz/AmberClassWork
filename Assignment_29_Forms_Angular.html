@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+      <style>
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+         }
+         span {
+            color: red;
+         }
+         .container {
+            display: grid;
+            /* align-content: center; */
+            /* gap: 20px;    */
+            justify-items: space-around;
+            margin: 0 15%;
+            /* justify-content: ; */
+            /* grid-template-columns: 1fr; */
+            /* border: 1px solid blue; */
+         }
+         input {
+            border: 1px solid grey;
+            padding: 10px;
+            box-shadow: 5px 5px 8px #888888;
+            width: 100%;
+            border-radius: 4px;
+            height: 40px;
+         }
+         .names,
+         .contacts {
+            display: grid;
+            row-gap: 20px;
+            column-gap: 60px;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 1fr;
+            /* border: 1px solid pink; */
+         }
+         #feedback {
+            width: calc(50% - 30px);
+            height: 40px;
+         }
+         #submit {
+            /* height: 40px; */
+            width: calc(20% - 30px);
+            background-color: #5bc0de;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            box-shadow: none;
+         }
+      </style>
+      <script>
+        var app = angular.module('myApp', []);
+  
+        app.controller('ngController', function($scope) {
+        $scope.telephone = "[1]?[- ]?[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}";
+      });
+    </script>
+   </head>
+   <body ng-app="myApp">
+    <!-- $scope.telephone = "[0-9]{3}-[0-9]{3}-[0-9]{4}"; -->
+      
+      <ng-form name="studentForm" ng-controller="ngController" novalidate>
+         <div class="container">
+            <h2 style="color: #0275d8; text-align: center; margin-bottom: 20px">
+               Contact our Sales Team
+            </h2>
+            <div class="names">
+               <div class="firstName">
+                  <span>*</span>
+                  <label for="firstName">First Name: </label> <br />
+                  <input
+                     type="text"
+                     name="firstName"
+                     ng-model="student.firstName"
+                     ng-required="true"
+                  />
+                  <span
+                     ng-show="studentForm.firstName.$touched && studentForm.firstName.$error.required"
+                     >First name is required.</span
+                  ><br /><br />
+               </div>
+               <div class="lastName">
+                  <span>*</span>
+                  <label for="lastName">Last Name</label><br />
+                  <input
+                     type="text"
+                     name="lastName"
+                     ng-minlength="3"
+                     ng-maxlength="10"
+                     ng-required="true"
+                     ng-model="student.lastName"
+                  />
+                  <span
+                     ng-show="studentForm.lastName.$touched && studentForm.lastName.$error.minlength"
+                     >min 3 chars.</span
+                  >
+                  <span
+                     ng-show="studentForm.lastName.$touched && studentForm.lastName.$error.maxlength"
+                     >Max 10 chars.</span
+                  >
+                  <span
+                     ng-show="studentForm.lastName.$touched && studentForm.lastName.$error.required"
+                     >Last name is required.</span
+                  >
+                  <br /><br />
+               </div>
+            </div>
+            <div class="contacts">
+               <div class="email">
+                  <span>*</span>
+                  <label for="dob">Email</label><br />
+                  <input
+                     type="email"
+                     id="email"
+                     ng-model="student.email"
+                     name="email"
+                     ng-required="true"
+                  />
+                  <span
+                     ng-show="studentForm.email.$touched && studentForm.email.$error.email"
+                     >Please enter valid email id.</span
+                  >
+                  <span
+                     ng-show="studentForm.email.$touched && studentForm.email.$error.required"
+                     >Valid email is required.</span
+                  ><br /><br />
+               </div>
+               <div class="telNo">
+                  <span>*</span>
+                  <label for="telNo">Telephone Number</label><br />
+                  <input
+                     type="tel"
+                     name="telNo"
+                     ng-pattern="telephone"
+                     ng-required="true"
+                     ng-model="student.telNo"
+                  />
+                  <span
+                     ng-show="studentForm.telNo.$touched && studentForm.telNo.$error.minlength"
+                     >min 7 chars.</span
+                  >
+                  <!-- <span
+                     ng-show="studentForm.telNo.$touched && studentForm.telNo.$error.maxlength"
+                     >Max 10 chars.</span
+                  > -->
+                  <span
+                     ng-show="studentForm.telNo.$touched && studentForm.telNo.$error.pattern"
+                     >Format is XXX-XXX-XXXX</span
+                  >
+                  <span
+                     ng-show="studentForm.telNo.$touched && studentForm.telNo.$error.required"
+                     >Telephone is Required.</span
+                  >
+
+                  <br /><br />
+               </div>
+            </div>
+            <div class="companyName">
+               <span>*</span>
+               <label for="companyName">Company Name</label><br />
+               <input
+                  type="text"
+                  name="companyName"
+                  ng-minlength="3"
+                  ng-maxlength="10"
+                  ng-required="true"
+                  ng-model="student.companyName"
+                  placeholder="To select, begin typing"
+               />
+               <span
+                  ng-show="studentForm.companyName.$touched && studentForm.companyName.$error.minlength"
+                  >min 3 chars.</span
+               >
+               <span
+                  ng-show="studentForm.companyName.$touched && studentForm.companyName.$error.maxlength"
+                  >Max 10 chars.</span
+               >
+               <span
+                  ng-show="studentForm.companyName.$touched && studentForm.companyName.$error.required"
+                  >Company Name is Required.</span
+               >
+               <br /><br />
+            </div>
+
+            <label for="feedback">How did you hear about us?</label>
+            <!-- <br/> -->
+            <select name="feedback" id="feedback" class="select">
+               <option value="first"></option>
+               <option value="second">LinkedIn</option>
+               <option value="third">Google</option>
+               <option value="other">Other</option>
+            </select>
+            <br /><br />
+            <label for="comments">Comments</label>
+            <textarea
+               name="comments"
+               style="height: 75px; border-radius: 6px"
+            ></textarea>
+            <br />
+            <br />
+
+            <input type="submit" value="Submit" id="submit" />
+            <!-- <button type="submit">Submit</button> -->
+         </div>
+      </form>
+   </body>
+</html>
