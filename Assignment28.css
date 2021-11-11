@@ -1,0 +1,52 @@
+.u1 {
+   text-transform: uppercase;
+}
+.u2 a {
+   /* change link colors */
+   color: magenta;
+}
+.u3 a {
+   /* remove link underline */
+   text-decoration: none;
+}
+.update {
+   background-color: red;
+}
+.u4 button {
+   /* background-color: green; */
+   width: 80px;
+   height: 40px;
+   color: white;
+}
+.u5 {
+   /* Create a text box */
+   width: 100%;
+   height: 75px;
+   opacity: 0.5;
+   border-radius: 6px;
+}
+.u6 {
+   /* center align elements */
+   text-align: center;
+}
+.u7 {
+   /* adjust padding */
+   padding: 10px;
+}
+.u8 tr {
+   /* highlight table rows */
+   background-color: greenyellow;
+   color: black;
+}
+.u9 {
+   /* Make images opaque */
+   opacity: 0.5;
+}
+.city-table {
+   display: grid;
+   justify-content: center;
+   /* align-content: space-between; */
+}
+.city-table th {
+   text-align: left;
+}
