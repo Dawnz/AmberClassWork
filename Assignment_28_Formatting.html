@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="Assignment28.css" />
+      <style>
+         div.India {
+            background-color: pink;
+            color: brown;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 6px;
+         }
+
+         div.Jamaica {
+            background-color: brown;
+            color: pink;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 6px;
+         }
+
+         div.content {
+            width: 850px;
+         }
+
+         div.container {
+            display: grid;
+            grid-auto-flow: column;
+         }
+
+         aside.aside {
+            /* border: 1px solid red; */
+            margin-bottom: 20px;
+            background-color: rgb(138, 182, 145);
+            padding: 20px;
+            border-radius: 6px;
+         }
+
+         aside.aside-1 {
+            height: 450px;
+         }
+
+         aside.aside-2 {
+            height: 650px;
+         }
+
+         section.aside_content {
+            margin-top: 80px;
+            padding: 0 50px;
+         }
+      </style>
+   </head>
+   <body style="background-color: darkslategray">
+      <div class="previous">
+         <p>This is what was done in my previous assignment</p>
+         <iframe
+            width="100%"
+            height="500px"
+            src="Assignment_5_Semantic_Tags.html"
+            sandbox="allow-same-origin"
+         ></iframe>
+      </div>
+      <div class="container">
+         <header>
+            <nav class="update u2 u3" style="text-align: end">
+               <a href="#Jamaica">Jamaica</a> | <a href="#India">India</a> |
+            </nav>
+         </header>
+
+         <main class="main-content">
+            <h1 class="main-title" style="text-align: center">
+               Indo-Jamaicans or Indian-Jamaicans?
+            </h1>
+            <div class="India content" id="India">
+               <article>
+                  <h2 class="update u6">India</h2>
+
+                  <p>
+                     A huge part of what makes
+                     <mark class="update u1">India</mark>
+                     such a great destination to travel to, is its people. Sure,
+                     they can be a handful sometimes and they are definitely as
+                     contradictory and diverse as they come. But for all the
+                     natural beauty this vast country boasts, the Indian tourist
+                     experience is far from complete without its beautiful,
+                     riotous, and chaotic populace!.
+                  </p>
+
+                  <form class="u4" action="https://en.wikipedia.org/wiki/India">
+                     <button class="update" type="submit">Go to India</button>
+                  </form>
+               </article>
+               <figure>
+                  <img
+                     src="CountryPics/India_Attractions.jpg"
+                     width="500px"
+                     height="450px"
+                     alt="India Content"
+                     class="update u9"
+                  />
+                  <figcaption>India Docks</figcaption>
+               </figure>
+            </div>
+
+            <div class="Jamaica content" id="Jamaica">
+               <article>
+                  <h2 class="update u6">Jamaica</h2>
+
+                  <p>
+                     Jamaica is the <mark>fourth largest</mark> Caribbean
+                     island, following Cuba, Hispaniola and Puerto Rico. Being
+                     in this group of islands in the Greater Antilles makes
+                     Jamaica the largest English-speaking island in the
+                     Caribbean.amaica is a culturally diverse country. The
+                     population of approximately 3 million people is made up of
+                     African, European, East Indian and Chinese heritage.
+                     <details>
+                        <summary>Our Motto</summary>
+                        island’s motto is “Out of Many, One People”, an ode to
+                        Jamaica’s multi-racial and multi-cultural history.
+                     </details>
+                  </p>
+                  <form
+                     class="u4"
+                     action="https://en.wikipedia.org/wiki/Jamaica"
+                  >
+                     <button class="update" type="submit">Go to Jamaica</button>
+                  </form>
+                  <table class="city-table u8 update">
+                     <tr>
+                        <th>City</th>
+                        <th>Population</th>
+                     </tr>
+                     <tr>
+                        <td>Kingston</td>
+                        <td>937,700</td>
+                     </tr>
+                     <tr>
+                        <td>Portmore</td>
+                        <td>102,861</td>
+                     </tr>
+                     <tr>
+                        <td>Montego Bay</td>
+                        <td>82,867</td>
+                     </tr>
+                  </table>
+               </article>
+               <figure>
+                  <img
+                     src="CountryPics/Jamaica_flag.jpg"
+                     alt="Elephant at sunset"
+                     width="500px"
+                     height="450px"
+                     class="update u9"
+                  />
+                  <figcaption>Jamaica Bird Flag</figcaption>
+               </figure>
+            </div>
+            <textarea name="comments" class="u5"></textarea>
+         </main>
+
+         <section class="aside_content">
+            <aside class="aside-1 aside">
+               <h1 class="u7 update">Aside 1 Content</h1>
+               Indo-Jamaicans or Indian-Jamaicans, are the descendants of people
+               who came from the Indian subcontinent to Jamaica. Indians form
+               the third largest ethnic group in Jamaica after Africans and
+               non-African Multiracials.
+            </aside>
+            <aside class="aside-2 aside">
+               <h1 class="u7 update">Aside 2 Content</h1>
+               Despite being a small percentage of the population, Indians have
+               made an outsized impact on their adopted island nation by
+               significantly contributing to its culture. They maintain their
+               own cultural organizations that work for the benefit of the
+               Indian community, while being assimilated into the wider Jamaican
+               community. The influence of the caste system has largely
+               atrophied and arranged marriages are no longer common.
+            </aside>
+         </section>
+      </div>
+      <footer>
+         Thanks for viewing
+         <time datetime="2021-12-25 20:00">Merry Christmas when it comes</time>.
+      </footer>
+   </body>
+</html>
