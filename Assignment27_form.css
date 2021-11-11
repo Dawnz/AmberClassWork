@@ -1,0 +1,66 @@
+* {
+   box-sizing: border-box;
+   /* margin: 0; */
+   padding: 0;
+}
+.container {
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   /* width: 100%; */
+   margin: 0 150px;
+   height: 80vh;
+}
+.main-content input {
+   /* display: grid; */
+   /* width: 25%; */
+   /* border: 1px solid red; */
+   margin: 20px 0;
+   padding: 15px;
+   height: 40px;
+   border-radius: 6px;
+}
+.main-content {
+   display: grid;
+   column-gap: 20px;
+   /* height: 80vh; */
+}
+.email-info input,
+.address-info input {
+   width: 100%;
+}
+.names,
+.apt-city-tel {
+   display: grid;
+   grid-auto-flow: column;
+   gap: 10px;
+}
+/* .order {
+   border: 3px solid red;
+} */
+.contact-info,
+.address {
+   display: grid;
+   /* border: 1px solid red; */
+   /* grid-auto-flow: column; */
+   /* width: 100%; */
+}
+nav {
+   border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+.crumb {
+   display: inline-block;
+}
+
+.crumb a::after {
+   display: inline-block;
+   color: #000;
+   content: ">";
+   font-size: 80%;
+   font-weight: bold;
+   padding: 0 3px;
+}
