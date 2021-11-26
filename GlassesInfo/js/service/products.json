@@ -1,0 +1,86 @@
+[
+   {
+      "name": "Anti eye strain kids frame",
+      "price": 25,
+      "category": "kids",
+      "frame": "optical",
+      "cover": "./GlassesInfo/General Products/anti eye strain ultralight safe high quality kids frame.jpg"
+   },
+   {
+      "name": "Tr90 Anti Blue Light",
+      "price": 43.6,
+      "category": "kids",
+      "frame": "optical",
+      "cover": "./GlassesInfo/General Products/Flexible Tr90 Comfortable Anti Blue Light Glasses for Kids.jpg"
+   },
+   {
+      "name": "Anti Blue Light Glasses",
+      "price": 64.31,
+      "category": "kids",
+      "frame": "optical",
+      "cover": "./GlassesInfo/General Products/Kids Anti Blue Light Glasses.jpg"
+   },
+   {
+      "name": "Large Rectangle eye glasses",
+      "price": 58.64,
+      "category": "kids",
+      "frame": "sunglasses",
+      "cover": "./GlassesInfo/General Products/kids fashionable large rectangle eye glasses.jpg"
+   },
+   {
+      "name": "LC036 Fashion Acetate",
+      "price": 88.07,
+      "category": "kids",
+      "frame": "acetate",
+      "cover": "./GlassesInfo/General Products/LC036 Fashion acetate.jpg"
+   },
+   {
+      "name": "ME011 Round Optical Frame",
+      "price": 10.74,
+      "category": "kids",
+      "frame": "acetate",
+      "cover": "./GlassesInfo/General Products/ME011 Kids round optical frames acetate eye glasses.jpg"
+   },
+   {
+      "name": "Polarized Lens UV400 Shades",
+      "price": 15.43,
+      "category": "men",
+      "frame": "sunglasses",
+      "cover": "./GlassesInfo/General Products/Men's Sunglasses Polarized Lens UV400 Magnetic Shades.jpg"
+   },
+   {
+      "name": "Blue Light Blocking Glasses",
+      "price": 32.19,
+      "category": "kids",
+      "frame": "metal",
+      "cover": "./GlassesInfo/General Products/Metal frames blue light blocking glasses.jpg"
+   },
+   {
+      "name": "P6102 Fashonable Small Glasses",
+      "price": 64.31,
+      "category": "kids",
+      "frame": "acetate",
+      "cover": "./GlassesInfo/General Products/P6102 Fashionable  small acetate.jpg"
+   },
+   {
+      "name": "Triangle Cat Eye Sunglasses",
+      "price": 99.28,
+      "category": "women",
+      "frame": "sunglasses",
+      "cover": "./GlassesInfo/General Products/retro triangle cat eye sunglasses ladies.jpg"
+   },
+   {
+      "name": "TR90 Gaming Glasses",
+      "price": 17.69,
+      "category": "kids",
+      "frame": "optical",
+      "cover": "./GlassesInfo/General Products/TR90 Anti-Blue Light Square Gaming Glasses Kids.jpg"
+   },
+   {
+      "name": "YZ2010C Cat Eyes Sunglasses",
+      "price": 71.3,
+      "category": "kids",
+      "frame": "metal",
+      "cover": "./GlassesInfo/General Products/YZ2010C metal frame ladies cat eyes sunglasses.jpg"
+   }
+]

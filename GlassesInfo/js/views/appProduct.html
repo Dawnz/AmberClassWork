@@ -1,0 +1,73 @@
+<div class="searchBar">
+   <input
+      type="text"
+      ng-model="searchCriteria"
+      placeholder="Search for Items Here"
+   />
+   <i class="fas fa-search searchIcon"></i>
+   <!-- <img src="...//"/> -->
+</div>
+
+<div class="item-view">
+   <h2 style="text-align: center" class="h-title">Best Products</h2>
+   <div class="best-products">
+      <div class="sunglasses glasses">
+         <img src="./GlassesInfo/Sunglasses.jpg" />
+         <h3>Sunglasses</h3>
+      </div>
+      <div class="read-glass glasses">
+         <img src="./GlassesInfo/Reading Glasses.jpg" />
+         <h3>Reading Glasses</h3>
+      </div>
+      <div class="optical-glass glasses">
+         <img src="./GlassesInfo/Optical Glasses.jpg" />
+         <h3>Optical Glasses</h3>
+      </div>
+      <div class="designer-glass glasses">
+         <img src="./GlassesInfo/Designer Glasses.jfif" />
+         <h3>Designer Glasses</h3>
+      </div>
+   </div>
+   <h2 style="text-align: center" class="h-title">Choose your Frame</h2>
+   <div class="g-frames">
+      <div class="metal-frame frame">
+         <img src="./GlassesInfo/Metal Frame.jpg" />
+         <p>Metal</p>
+      </div>
+      <div class="inner-frame">
+         <div class="acetate-frame frame">
+            <img src="./GlassesInfo/Acetate Frame.jpg" />
+            <p>Acetate</p>
+         </div>
+         <div class="sunglasses frame">
+            <img src="./GlassesInfo/Sunglasses Frame.jpg" />
+            <p>Sunglasses</p>
+         </div>
+      </div>
+      <div class="wooden-frame frame">
+         <img src="./GlassesInfo/Wooden Frame.jpg" />
+         <p>Wooden</p>
+      </div>
+   </div>
+
+   <section class="products" ng-controller="ProductsController">
+      <div
+         class="product"
+         ng-repeat="product in products | filter:searchCriteria"
+         ng-init="getTotals(product)"
+      >
+         <!-- <a href="#/item/{{$scope.pushItem}}"> -->
+         <img
+            ng-src="{{product.cover}}"
+            width="200px"
+            height="200px"
+            ng-click="pushItem(product)"
+         />
+         <!-- </a> -->
+         <!-- ng-click="findItem(product)"  -->
+         <p class="title">{{ product.name }}</p>
+         <p class="price">{{ product.price | currency }}</p>
+         <!-- <p class="category">{{ product.category }}</p> -->
+      </div>
+   </section>
+</div>

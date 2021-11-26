@@ -9,12 +9,26 @@
          src="https://kit.fontawesome.com/34e1afac79.js"
          crossorigin="anonymous"
       ></script>
+      <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+
+      <!-- <script src="./angularjs.js"></script>
+      <script src="./angular-route.js"></script> -->
+      <script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+      <link rel="stylesheet" href="./Assignment30.css" />
    </head>
-   <body>
-      <div class="container">
+   <!-- The app module -->
+   <body ng-app="myApp">
+      <!-- This is the Instance of the Cart Controller -->
+      <div class="container" ng-controller="CartController">
          <header>
             <div class="header-left">
-               <div>LOGO Dawnz Eyewear</div>
+               <div class="logo">
+                  <img
+                     src="./GlassesInfo/Glasses Logo.jpg"
+                     style="width: 50px; mix-blend-mode: darken; display: grid"
+                  />
+                  Dawnz Eyewear
+               </div>
                <div class="contact-info">
                   <div class="tel-no">
                      <img src="./UsefulSVG/call.svg" width="25px" />
@@ -29,18 +43,219 @@
             <div class="header-right">
                <i class="fas fa-search"></i>
                <i class="fas fa-user"></i>
-               <i class="fas fa-shopping-bag"></i>
-               <span>3</span>
+               <a
+                  href="#cartitem"
+                  style="text-decoration: none; color: inherit"
+               >
+                  <i class="fas fa-shopping-bag"></i>
+                  <!-- CartController has a count variable that keeps count of all the items -->
+                  <span>{{count}}</span>
+               </a>
             </div>
          </header>
+
          <section class="nav-container">
             <ul class="menu-list">
                <li class="home">
-                  <a href="#"> HOME </a>
+                  <a href="#/"> HOME </a>
+                  <!-- 
+                  <div class="home-outer outer">
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="#">Men's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">EyePatch</a>
+                              </li>
+                              <li>
+                                 <a href="#">EyeTap</a>
+                              </li>
+                              <li>
+                                 <a href="#">Mirror Sunglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shooting Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shutter Shades</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div> -->
+               </li>
+               <li class="shop">
+                  <a href="#"> SHOP </a>
+
+                  <div class="home-outer outer">
+                     <ul class="sub-menu sub1">
+                        <li>
+                           <a href="#">Men's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">EyePatch</a>
+                              </li>
+                              <li>
+                                 <a href="#">EyeTap</a>
+                              </li>
+                              <li>
+                                 <a href="#">Mirror Sunglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shooting Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Shutter Shades</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#">Women's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">Cateyeglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Computer Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Epiphany Eyewear</a>
+                              </li>
+                              <li>
+                                 <a href="#">Frame-Less Glasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Contact Lenses</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="#">Kid's Sunglasses</a>
+                           <ul class="sub-menu sub2">
+                              <li>
+                                 <a href="#">Eyeglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Sunglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Rectangleglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Roundglasses</a>
+                              </li>
+                              <li>
+                                 <a href="#">Wayfarerglasses</a>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="home">
+                  <a href="#">Collection</a>
+               </li>
+               <li class="home">
+                  <a href="#">About Us</a>
+
+                  <div class="home-outer outer">
+                     <ul class="sub-menu">
+                        <li>
+                           <a href="#">Who We Are</a>
+                        </li>
+                        <li>
+                           <a href="#">Our Team</a>
+                        </li>
+                        <li>
+                           <a href="#">Contact Us</a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="home" ng-controller="CartController">
+                  <a href="#cartitem">Your Cart</a>
                </li>
             </ul>
          </section>
-         <section class="main-content"></section>
+         <section class="main-content">
+            <!-- <div class="cover">
+               <p>Put Image Slider Here</p>
+            </div> -->
+
+            <div ng-view></div>
+            <!-- <section class="products" ng-controller="ProductsController"> -->
+            <!-- <div class="product" ng-repeat="product in products"> -->
+            <!-- <div class="thumbnail"> -->
+            <!-- <img ng-src="{{product.cover}}" width="200px" height="200px" />
+                  <p class="title">{{ product.name }}</p>
+                  <p class="price">{{ product.price | currency }}</p>
+                  <p class="date">{{ product.category }}</p> -->
+            <!-- </div> -->
+            <!-- <app-product product="product"></app-product> -->
+            <!-- </div> -->
+            <!-- </section> -->
+         </section>
       </div>
+      <footer>
+         <section class="f-product">
+            <h3>Product</h3>
+            <ul>
+               <li>Eyewear for Men</li>
+               <li>Eyewear for Women</li>
+               <li>Eyewear for Kids</li>
+            </ul>
+         </section>
+         <section class="f-company">
+            <h3>Company</h3>
+            <ul>
+               <li>Contact Us</li>
+               <li>About Us</li>
+               <li>Jobs</li>
+            </ul>
+         </section>
+         <section class="f-connect">
+            <h3>Connect With us</h3>
+            <ul>
+               <li><i class="fab fa-facebook-square"> Facebook</i></li>
+               <li><i class="fab fa-twitter-square"> Twitter</i></li>
+               <li><i class="fab fa-instagram-square"> Instagram</i></li>
+               <li><i class="fab fa-google-plus-square"> Google</i></li>
+               <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+               <li><i class="fab fa-github-square"> Github</i></li>
+            </ul>
+         </section>
+         <section class="f-legal">
+            <h3>Legal Information</h3>
+            <p>
+               <small>
+                  Copyright
+                  <i class="far fa-copyright"> </i>
+                  2021-2099
+               </small>
+            </p>
+            <p><small> All Rights Reserved</small></p>
+            <p>
+               <small
+                  ><a href="#/" style="color: inherit">
+                     Terms and Conditions
+                  </a></small
+               >
+            </p>
+         </section>
+      </footer>
+
+      <!-- Module -->
+      <script src="./GlassesInfo/js/Assignment_30_app_module.js"></script>
+      <!-- Controller -->
+      <script src="./GlassesInfo/js/controller/Assignment_30_products_controller.js"></script>
+      <script src="./GlassesInfo/js/controller/Assignment_30_ItemDetails_controller.js"></script>
+      <script src="./GlassesInfo/js/controller/Assignment_30_Cart_controller.js"></script>
+      <script src="./GlassesInfo/js/controller/Assignment_30_form_controller.js"></script>
+
+      <!-- Directives -->
+      <script src="./GlassesInfo/js/directives/compareTo.js"></script>
+      <script src="./GlassesInfo/js/directives/appProduct.js"></script>
+      <!-- Service -->
+      <script src="./GlassesInfo/js/service/cartService.js"></script>
    </body>
 </html>
