@@ -1,0 +1,179 @@
+<ng-form name="SignUpForm"  novalidate>
+   <div class="form-container">
+      <h2 style=" text-align: center; margin-bottom: 20px">
+         Sign Up
+      </h2>
+      <div class="names">
+         <div class="firstName">
+            <span>*</span>
+            <label for="firstName">First Name: </label> <br />
+            <input
+               type="text"
+               name="firstName"
+               ng-model="user.firstName"
+               ng-required="true"
+            />
+            <span
+               ng-show="SignUpForm.firstName.$touched && SignUpForm.firstName.$error.required"
+               >First name is required.</span
+            ><br /><br />
+         </div>
+         <div class="lastName">
+            <span>*</span>
+            <label for="lastName">Last Name</label><br />
+            <input
+               type="text"
+               name="lastName"
+               ng-minlength="3"
+               ng-maxlength="10"
+               ng-required="true"
+               ng-model="user.lastName"
+            />
+            <span
+               ng-show="SignUpForm.lastName.$touched && SignUpForm.lastName.$error.minlength"
+               >min 3 chars.</span
+            >
+            <span
+               ng-show="SignUpForm.lastName.$touched && SignUpForm.lastName.$error.maxlength"
+               >Max 10 chars.</span
+            >
+            <span
+               ng-show="SignUpForm.lastName.$touched && SignUpForm.lastName.$error.required"
+               >Last name is required.</span
+            >
+            <br /><br />
+         </div>
+      </div>
+      <div class="contacts">
+         <div class="e-mail">
+            <span>*</span>
+            <label for="dob">Email</label><br />
+            <input
+               type="email"
+               id="email"
+               ng-model="user.email"
+               name="email"
+               ng-required="true"
+            />
+            <span
+               ng-show="SignUpForm.email.$touched && SignUpForm.email.$error.email"
+               >Please enter valid email id.</span
+            >
+            <span
+               ng-show="SignUpForm.email.$touched && SignUpForm.email.$error.required"
+               >Valid email is required.</span
+            ><br /><br />
+         </div>
+         <div class="telNo">
+            <span>*</span>
+            <label for="telNo">Telephone Number</label><br />
+            <input
+               type="tel"
+               name="telNo"
+               ng-pattern="telephone"
+               ng-required="true"
+               ng-model="user.telNo"
+            />
+            <span
+               ng-show="SignUpForm.telNo.$touched && SignUpForm.telNo.$error.minlength"
+               >min 7 chars.</span
+            >
+            <!-- <span
+               ng-show="SignUpForm.telNo.$touched && SignUpForm.telNo.$error.maxlength"
+               >Max 10 chars.</span
+            > -->
+            <span
+               ng-show="SignUpForm.telNo.$touched && SignUpForm.telNo.$error.pattern"
+               >Format is XXX-XXX-XXXX</span
+            >
+            <span
+               ng-show="SignUpForm.telNo.$touched && SignUpForm.telNo.$error.required"
+               >Telephone is Required.</span
+            >
+
+            <br /><br />
+         </div>
+      </div>
+      <div class="dob">
+         <span>*</span>
+         <label for="dob">Date of Birth</label><br />
+         <input
+            type="date"
+            name="dob"
+            ng-minlength="3"
+            ng-maxlength="10"
+            ng-required="true"
+            ng-model="user.dob"
+            placeholder="To select, begin typing"
+         />
+         <span
+            ng-show="SignUpForm.dob.$touched && SignUpForm.dob.$error.minlength"
+            >min 3 chars.</span
+         >
+         <span
+            ng-show="SignUpForm.dob.$touched && SignUpForm.dob.$error.maxlength"
+            >Max 10 chars.</span
+         >
+         <span
+            ng-show="SignUpForm.dob.$touched && SignUpForm.dob.$error.required"
+            >Company Name is Required.</span
+         >
+         <br /><br />
+      </div>
+
+      <div class="passwords">
+         <div class="password">
+            <span>*</span>
+            <label for="password">Password: </label> <br />
+            <input
+               type="password"
+               name="password"
+               ng-model="user.password"
+               ng-required="true"
+            />
+            <span
+               ng-show="SignUpForm.password.$touched && SignUpForm.password.$error.required"
+               >Password is required.</span
+            ><br /><br />
+         </div>
+         <div class="c-password">
+            <span>*</span>
+            <label for="cPassword">Confirm Password</label><br />
+            <input
+               type="password"
+               name="cPassword"
+               ng-minlength="3"
+               ng-maxlength="10"
+               ng-required="true"
+               ng-model="user.cPassword"
+               compare-to="user.password"
+            />
+            <span
+               ng-show="SignUpForm.cPassword.$touched && SignUpForm.cPassword.$error.minlength"
+               >min 3 chars.</span
+            >
+            <span
+               ng-show="SignUpForm.cPassword.$touched && SignUpForm.cPassword.$error.maxlength"
+               >Max 10 chars.</span
+            >
+            <span
+               ng-show="SignUpForm.cPassword.$touched && SignUpForm.cPassword.$error.required"
+               >Confirm Password.</span
+            >
+            <span
+               ng-show="SignUpForm.cPassword.$touched && SignUpForm.cPassword.$invalid"
+               >Passwords do not match.</span
+            >
+            <!-- <span
+               ng-show="SignUpForm.c-password.$touched && SignUpForm.c-password.$error"
+               >Passwords do not Match.</span
+            > -->
+            <br /><br />
+         </div>
+      </div>
+      
+
+      <input type="submit" value="Submit" id="submit" ng-disable="SignUpForm.$invalid"/>
+      <!-- <button type="submit">Submit</button> -->
+   </div>
+</form>
