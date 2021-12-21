@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="Assignment32.css" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+      <script>
+         var app = angular.module("myApp", []);
+
+         app.controller("ngController", function ($scope) {
+            $scope.telephone = "[1]?[- ]?[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}";
+         });
+      </script>
+   </head>
+   <body ng-app="myApp">
+      <main class="flex">
+         <section>
+            <ng-form
+               action=""
+               name="userForm"
+               ng-controller="ngController"
+               novalidate
+            >
+               <div class="head flex">
+                  <img
+                     src="https://jmea.org/wp-content/uploads/2021/07/JN-Logo.png"
+                     alt="JN-Logo"
+                     width="60px"
+                  />
+
+                  <h3 class="blue-text">
+                     JAMAICA NATIONAL BUILDING SOCIETY <br />
+                     CUSTOMER INFORMATION UPDATE TEMPLATE
+                  </h3>
+               </div>
+               <br />
+               <div class="second-grid">
+                  <div class="second-grid">
+                     <label for="fname">Name:</label>
+                     <!-- </div> -->
+                     <div>
+                        <input
+                           type="text"
+                           name="fname"
+                           ng-model="user.fname"
+                           ng-minlength="3"
+                           ng-maxlength="10"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.fname.$touched && userForm.fname.$error.minlength"
+                           >min 3 chars.</span
+                        >
+                        <span
+                           ng-show="userForm.fname.$touched && userForm.fname.$error.maxlength"
+                           >Max 10 chars.</span
+                        >
+                        <span
+                           ng-show="userForm.fname.$touched && userForm.fname.$error.required"
+                           >* Required</span
+                        >
+                     </div>
+                     <label for="address">Address:</label>
+                     <div>
+                        <input
+                           name="address"
+                           type="text"
+                           ng-model="user.address"
+                           ng-minlength="3"
+                           ng-maxlength="10"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.address.$touched && userForm.address.$error.required"
+                        >
+                           * Required</span
+                        >
+                     </div>
+                     <label for="accNum">Account Number(s)</label>
+                     <div>
+                        <input type="text" /> &nbsp;<input
+                           type="text"
+                           name="accNum"
+                           ng-model="user.accNum"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.accNum.$touched && userForm.accNum.$error.required"
+                        >
+                           * Required</span
+                        >
+                     </div>
+                  </div>
+                  <div class="second-grid align-right">
+                     <label for="telNo">Home Telephone No.</label>
+                     <div>
+                        <input
+                           type="text"
+                           ng-model="user.telNo"
+                           name="telNo"
+                           ng-pattern="telephone"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.telNo.$touched && userForm.telNo.$error.minlength"
+                           >min 7 chars.</span
+                        >
+
+                        <span
+                           ng-show="userForm.telNo.$touched && userForm.telNo.$error.pattern"
+                           >Format is XXX-XXX-XXXX</span
+                        >
+                        <span
+                           ng-show="userForm.telNo.$touched && userForm.telNo.$error.required"
+                           >Telephone is Required.</span
+                        >
+                     </div>
+                     <label for="">Mobile No.</label>
+                     <div>
+                        <input
+                           type="text"
+                           ng-model="user.mobNo"
+                           name="mobNo"
+                           ng-pattern="telephone"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.mobNo.$touched && userForm.mobNo.$error.minlength"
+                           >min 7 chars.</span
+                        >
+
+                        <span
+                           ng-show="userForm.mobNo.$touched && userForm.mobNo.$error.pattern"
+                           >Format is XXX-XXX-XXXX</span
+                        >
+                        <span
+                           ng-show="userForm.mobNo.$touched && userForm.mobNo.$error.required"
+                           >Mobile is Required.</span
+                        >
+                     </div>
+                     <label for="">Identification Type</label>
+                     <div>
+                        <input
+                           type="text"
+                           ng-model="user.IdType"
+                           name="IdType"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.IdType.$touched && userForm.IdType.$error.required"
+                        >
+                           * Required</span
+                        >
+                     </div>
+                     &nbsp;
+                     <input type="text" />
+                     <label for="">Identification No.</label>
+                     <div>
+                        <input
+                           type="text"
+                           ng-model="user.IdNo"
+                           name="idNo"
+                           ng-required="true"
+                        />
+                        <span
+                           ng-show="userForm.idNo.$touched && userForm.idNo.$error.required"
+                        >
+                           * Required</span
+                        >
+                     </div>
+                  </div>
+               </div>
+               <br />
+               <div class="border fourth-grid">
+                  <h3>CHANGE OF SERVICING BRANCH</h3>
+                  &nbsp;
+                  <p>From:</p>
+                  <p class="align-center">To:</p>
+                  &nbsp;
+                  <p>BRANCH:</p>
+                  <input type="month" />
+                  &nbsp;
+                  <input type="month" />
+                  <p class="full-grid">
+                     Kindly accept this as your authority to transfer the
+                     following accoounts to the branch indicated above.
+                  </p>
+
+                  <label for="">ACCOUNT NUMBER(S):</label>
+                  <input type="text" />
+                  &nbsp;
+
+                  <input type="text" />
+                  &nbsp;
+
+                  <input type="text" />
+                  &nbsp;
+
+                  <input type="text" />
+                  &nbsp;
+
+                  <input type="text" />
+                  &nbsp;
+
+                  <input type="text" />
+               </div>
+               <br />
+               <div class="border fourth-grid">
+                  <h3>CHANGE OF ADDRESS</h3>
+                  <p class="full-grid">
+                     Kindly accept this as your authority to transfer the
+                     following accounts to the branch indicated above.
+                  </p>
+                  &nbsp;
+
+                  <p>&nbsp; Old Address</p>
+                  &nbsp;
+
+                  <p>&nbsp; Current Address</p>
+                  <label for="" class="align-right blue-text">Address:</label>
+                  <div class="border">
+                     <input type="text" />
+                     <input type="text" />
+                     <input type="text" />
+                  </div>
+                  <label for="" class="align-right blue-text">Address:</label>
+                  <div class="border">
+                     <input type="text" />
+                     <input type="text" />
+                     <input type="text" />
+                  </div>
+               </div>
+               <br />
+               <div class="border">
+                  <h3>CHANGE OF NAME</h3>
+                  <p class="full-grid">
+                     Please be advised that my name has been changed as
+                     indicated below:
+                  </p>
+                  <div class="third-grid full-grid">
+                     &nbsp;
+                     <p>Title, First Name & Middle Name(s)</p>
+                     <p>Surname</p>
+                     <p class="blue-text">Previous Name</p>
+                     <input type="text" class="border" />
+                     <input type="text" class="border" />
+                     &nbsp;
+                     <p>Title, First Name & Middle Name(s)</p>
+                     <p>Surname</p>
+                     <p class="blue-text">Current Name</p>
+                     <input type="text" class="border" />
+                     <input type="text" class="border" />
+                  </div>
+                  <div class="second-grid">
+                     <p>The change of name was occasioned by</p>
+                     <p class="align-center">as per certificate numbered</p>
+                  </div>
+                  <div class="fourth-grid">
+                     &nbsp;
+                     <p>and dated</p>
+                     <input type="month" />
+                     &nbsp;
+                  </div>
+               </div>
+               <br />
+               <div class="border">
+                  <p>
+                     I agree to hold the Jamaica National Building Society and
+                     its staff harmless and indemnified from and against all
+                     claims proceedings, losses, damages and expenses which may
+                     occur as a result of these instructions.
+                  </p>
+                  <div class="second-grid">
+                     <p class="align-right">Confirmed by:</p>
+                     <input type="text" />
+                     &nbsp;
+
+                     <p class="align-center">Signature of Customer</p>
+                     <p class="align-right">
+                        Witnessed by Notary Public / J.P.: <br />
+                        <span style="margin-right: 8%">
+                           (for change of name)
+                        </span>
+                     </p>
+
+                     <input type="text" />
+                     &nbsp;
+
+                     <p class="align-center">
+                        Signature and Official Stamp/Seal
+                     </p>
+                  </div>
+               </div>
+               <br />
+               <div class="border">
+                  <h4 class="full-grid blue-text">FOR OFFICIAL USE:</h4>
+                  <div class="fourth-grid">
+                     <p>Recieved by:</p>
+
+                     <div class="flex">
+                        <p>Name:</p>
+                        <input type="text" class="dashed" />
+                     </div>
+                     <div class="flex">
+                        <p>Signature:</p>
+                        <input type="text" class="dashed" />
+                     </div>
+                     <div class="flex">
+                        <p>Date:</p>
+                        <input type="date" class="dashed" />
+                     </div>
+                     <p>Approved by:</p>
+
+                     <div class="flex">
+                        <p>Name:</p>
+                        <input type="text" class="dashed" />
+                     </div>
+                     <div class="flex">
+                        <p>Signature:</p>
+                        <input type="text" class="dashed" />
+                     </div>
+                     <div class="flex">
+                        <p>Date:</p>
+                        <input type="date" class="dashed" />
+                     </div>
+                  </div>
+                  <div class="second-grid">
+                     <p>
+                        What documentary evidence did u recieve to indicate
+                        changes:
+                     </p>
+                     <input type="text" />
+                  </div>
+
+                  <p class="full-grid">Adjustment done on:</p>
+
+                  <div class="third-grid" style="margin-left: 20%">
+                     <p>Signature Card:</p>
+                     <p class="fourth-grid">
+                        <input type="checkbox" name="" id="" />
+                        <label for="">Yes</label>
+                        <input type="checkbox" name="" id="" />
+                        <label for="">No</label>
+                     </p>
+                     &nbsp;
+
+                     <p>Banking Card:</p>
+                     <p class="fourth-grid">
+                        <input type="checkbox" name="" id="" />
+                        <label for="">Yes</label>
+                        <input type="checkbox" name="" id="" />
+                        <label for="">No</label>
+                     </p>
+                     &nbsp;
+
+                     <p>Other:</p>
+                     <p class="fourth-grid">
+                        <input type="checkbox" name="" id="" />
+                        <label for="">Yes</label>
+                        <input type="checkbox" name="" id="" />
+                        <label for="">No</label>
+                     </p>
+                  </div>
+               </div>
+            </ng-form>
+         </section>
+      </main>
+   </body>
+</html>
