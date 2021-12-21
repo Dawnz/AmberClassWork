@@ -3,13 +3,13 @@ app.controller("CartController", [
    "$http",
    function ($scope, CartService) {
       //   $scope.productList = [];
-      console.log(CartService.carts);
+      // console.log(CartService.carts);
       $scope.carts = [];
       $scope.total = 0;
       $scope.count = 0;
       $scope.getLength = function () {
          $scope.count = $scope.carts.length;
-         console.log($scope.count);
+         // console.log($scope.count);
       };
       //   $http.get("/GlassesInfo/js/service/products.json").then(function (res) {
       //      // console.log(data);
