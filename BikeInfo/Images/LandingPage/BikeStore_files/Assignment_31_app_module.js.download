@@ -1,0 +1,19 @@
+const app = angular.module("myApp", ["ngRoute"]);
+
+// this is the routing config
+app.config(function ($routeProvider) {
+   $routeProvider
+      //this is the default location
+      .when("/", {
+         controller: "ProductsController",
+         templateUrl: "/BikeInfo/views/landingPage.html",
+      })
+      // //this is the location to go when you select an Item
+      .when("/category/:category", {
+         controller: "CategoriesController",
+         templateUrl: "/BikeInfo/views/categoryPage.html",
+      })
+      .otherwise({
+         redirectTo: "/",
+      });
+});

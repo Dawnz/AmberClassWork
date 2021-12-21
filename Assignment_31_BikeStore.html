@@ -4,7 +4,228 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>BikeStore</title>
+      <link rel="stylesheet" href="Assignment31.css" />
+      <script
+         src="https://kit.fontawesome.com/34e1afac79.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+      <script src="https://code.angularjs.org/1.8.2/angular-animate.js"></script>
+      <script
+         data-require="angular-ui-bootstrap@0.11.0"
+         src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"
+      ></script>
+
+      <!-- <script src="./angularjs.js"></script>
+      <script src="./angular-route.js"></script> -->
+      <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
    </head>
-   <body></body>
+   <body ng-app="myApp">
+      <div class="container" ng-controller="CartController">
+         <header>
+            <div class="logo-title" style="padding-top: 20px">
+               <img class="bike-logo" src="./BikeInfo/Images/Bike Logo.png" />
+               <div>
+                  <h1>Dawnz Bikeshop</h1>
+                  <p
+                     style="
+                        font-family: cursive;
+                        font-weight: bold;
+                        color: #f0d229e1;
+                        text-align: end;
+                        padding: 0 25px;
+                     "
+                  >
+                     Gear Up!
+                  </p>
+               </div>
+            </div>
+            <section class="policy-search">
+               <div class="policies">
+                  <div class="policy">
+                     <img src="./BookInfo/shipping.webp" />
+                     <div>
+                        <details>
+                           <summary>Free Shipping Item</summary>
+                           <p>for all orders over $500</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="policy">
+                     <img src="./BookInfo/calendar.webp" />
+                     <div>
+                        <details>
+                           <summary>Money back gurantee</summary>
+                           <p>100% money back gurantee</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="policy">
+                     <img src="./BookInfo/wallet.webp" />
+                     <div>
+                        <details>
+                           <summary>Cash on delivery</summary>
+                           <p>Yuh can pay fi it when it reach</p>
+                        </details>
+                     </div>
+                  </div>
+                  <div class="policy">
+                     <img src="./BookInfo/telephone.webp" />
+                     <div>
+                        <details>
+                           <summary>Help & Support</summary>
+                           <p>Call us: +1-876-396-4259</p>
+                        </details>
+                     </div>
+                  </div>
+               </div>
+               <div class="searchbar">
+                  <form action="#">
+                     <!-- ng-model-options="{ updateOn: 'blur', allowInvalid: '$inherit' }" -->
+                     <input
+                        type="text"
+                        placeholder="Search entire store here"
+                        ng-model="search.val"
+                     />
+                     <!-- ng-blur="search.val = ''" -->
+                     <!-- ng-blur="search.val = ''" -->
+                     <a href="#">
+                        <i class="fa fa-search"></i>
+                     </a>
+                  </form>
+               </div>
+            </section>
+
+            <div class="cart">
+               <a href="#!cart">
+                  <i class="fas fa-shopping-cart fa-2x"></i> My Cart
+               </a>
+               <span>{{count}}</span>
+               <div class="sub mini-cart"></div>
+            </div>
+         </header>
+         <section class="nav-container">
+            <ul class="menu-list">
+               <li class="home">
+                  <a href="#!/"> HOME </a>
+               </li>
+               <li class="shop">
+                  <a href="#"> SHOP </a>
+               </li>
+               <li class="home">
+                  <a href="#">Collection</a>
+               </li>
+               <li class="home">
+                  <a href="#">About Us</a>
+               </li>
+               <li class="home">
+                  <a href="#!cart">Your Cart</a>
+               </li>
+            </ul>
+         </section>
+         <section class="main-content">
+            <section
+               ng-if="search.val"
+               class="all-products"
+               ng-controller="PageController"
+            >
+               <!-- <div> -->
+               <div
+                  class="product"
+                  ng-repeat="product in filterData= (totalItems | filter :search.val) | limitTo:5:5*(page-1) "
+                  ng-controller="ProductsController"
+               >
+                  <!-- <a href="#/item/{{$scope.pushItem}}"> -->
+                  <img
+                     ng-src="{{product.cover}}"
+                     width="200px"
+                     height="200px"
+                     ng-mousedown="pushItem(product)"
+                  />
+                  <!-- </a> -->
+                  <!-- ng-click="findItem(product)"  -->
+                  <p class="title">{{ product.name }}</p>
+                  <p class="price">{{ product.price | currency }}</p>
+                  <!-- <p class="category">{{ product.category }}</p> -->
+                  <!-- Pagination -->
+               </div>
+               <div class="pag-cont">
+                  <!-- pagination using material UI -->
+                  <pagination
+                     ng-model="page"
+                     total-items="filterData.length"
+                     items-per-page="5"
+                  ></pagination>
+               </div>
+               <!-- </div> -->
+            </section>
+            <div ng-view ng-if="!search.val"></div>
+         </section>
+         <footer>
+            <section class="f-product">
+               <h3>Product</h3>
+               <ul>
+                  <li>Body</li>
+                  <li>Brakes</li>
+                  <li>Engine</li>
+                  <li>Exhaust</li>
+                  <li>Suspension</li>
+                  <li>Seats</li>
+               </ul>
+            </section>
+            <section class="f-company">
+               <h3>Company</h3>
+               <ul>
+                  <li>Contact Us</li>
+                  <li>About Us</li>
+                  <li>Jobs</li>
+               </ul>
+            </section>
+            <section class="f-connect">
+               <h3>Connect With us</h3>
+               <ul>
+                  <li><i class="fab fa-facebook-square"> Facebook</i></li>
+                  <li><i class="fab fa-twitter-square"> Twitter</i></li>
+                  <li><i class="fab fa-instagram-square"> Instagram</i></li>
+                  <li><i class="fab fa-google-plus-square"> Google</i></li>
+                  <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+                  <li><i class="fab fa-github-square"> Github</i></li>
+               </ul>
+            </section>
+            <section class="f-legal">
+               <h3>Legal Information</h3>
+               <p>
+                  <small>
+                     Copyright
+                     <i class="far fa-copyright"> </i>
+                     <script>
+                        document.write(new Date().getFullYear());
+                     </script>
+                  </small>
+               </p>
+               <p><small> All Rights Reserved</small></p>
+               <p>
+                  <small
+                     ><a href="#/" style="color: inherit">
+                        Terms and Conditions
+                     </a></small
+                  >
+               </p>
+            </section>
+         </footer>
+      </div>
+      <!-- Module -->
+      <script src="./BikeInfo/js/Assignment_31_app_module.js"></script>
+      <!-- Controller -->
+      <script src="./BikeInfo/js/controller/ProductsController.js"></script>
+      <script src="./BikeInfo/js/controller/CategoriesController.js"></script>
+      <script src="./BikeInfo/js/controller/PageController.js"></script>
+      <script src="./BikeInfo/js/controller/CartController.js"></script>
+      <script src="./BikeInfo/js/controller/ItemDetailsController.js"></script>
+
+      <!-- Service -->
+      <script src="./BikeInfo/js/service/BikeParts.json"></script>
+      <script src="./BikeInfo/js/service/PartsService.js"></script>
+   </body>
 </html>

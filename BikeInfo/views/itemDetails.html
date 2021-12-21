@@ -1,0 +1,28 @@
+<div class="item-container">
+   <div class="item-details">
+      <img ng-src="{{ detail.cover }}" class="item-img" />
+      <div class="item-contents">
+         <h2 class="item-title">{{detail.name}}</h2>
+         <p class="item-price">Price: {{detail.price|currency}}</p>
+         <!-- <p class="item-frame capitalize">Frame: {{detail.frame}}</p> -->
+         <p class="item-category capitalize">Category: {{detail.category}}</p>
+         <div class="order-item">
+            <button type="button" ng-click="addToCart(detail)">
+               Add to Cart
+            </button>
+            <button type="button">Buy Now</button>
+         </div>
+      </div>
+   </div>
+   <div class="cart-list-outer">
+      <!-- {{count}} -->
+      <ul ng-repeat="cart in carts track by $index" ng-init="getTotals(cart)">
+         <!-- <li><img ng-src="{{cart.itemImg}}" width="200px" height="200px" /></li>
+         <li>{{count}}</li>
+         <li>{{cart.itemPrice}}</li>
+         <li><button type="button" ng-click="removeCart($index)">X</button></li> -->
+      </ul>
+      <p>You have {{count}} Item(s) in your cart</p>
+      <p>Your total is {{total| currency}}</p>
+   </div>
+</div>

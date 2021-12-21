@@ -1,0 +1,35 @@
+app.controller("ProductsController", [
+   "$scope",
+   "$location",
+   "PartsService",
+   function ($scope, $location, PartsService) {
+      PartsService.then(function onSuccess(response) {
+         $scope.products = response.data;
+         //  console.log($scope.products.map((product) => product.category));
+      }).catch(function onError(data) {
+         console.error("Caa find the file ennu bossman");
+      });
+
+      // console.log(test);
+      $scope.pushItem = function (category) {
+         // console.log($scope.products[$routeParams]);
+         //  let category1 = new Set(
+         //     $scope.products.map((product) => product.category)
+         //  );
+         //  console.log(category1[category1.indexOf(category)]);
+         $scope.categories = $scope.products.filter(
+            (product) => product.category == category
+         );
+         //  $scope.categories.map((category) => console.log(category));
+         console.log(category);
+         //  console.log(val);
+         //  console.log($scope.products.category.map((category) => category));
+         //  $location.path("category/" + category);
+
+         console.log("category/" + category);
+
+         // return $scope.products.indexOf(product);
+      };
+      // });
+   },
+]);

@@ -1,0 +1,235 @@
+[
+   {
+      "name": "Bruce & Shark Motorcycle Bodywork",
+      "price": 25,
+      "category": "Body",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Bruce & Shark Motorcycle Bodywork Fairing Kit ABS Gray White for Honda.jpg"
+   },
+   {
+      "name": "Bruce & Shark Motorcycle Bodywork",
+      "price": 25,
+      "category": "Body",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Bruce & Shark Motorcycle Bodywork Honda CBR600RR.jpg"
+   },
+   {
+      "name": "Shikha Motorcycle Fairing Kit for",
+      "price": 25,
+      "category": "Body",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Shikha Motorcycle Fairing Kit for Suzuki Hayabusa 05 ABS Bodywork Glossy Black.jpg"
+   },
+   {
+      "name": "YIKBIK Unpainted Motorcycle Fairings Kit",
+      "price": 25,
+      "category": "Body",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/YIKBIK Unpainted Motorcycle Fairings Kit for Kawasaki Ninja.jpg"
+   },
+   {
+      "name": "ZXMT Unpainted Injection Fairing Kit ABS",
+      "price": 25,
+      "category": "Body",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/ZXMT Unpainted Injection Fairing Kit ABS Bodywork for Yamaha YZF.jpg"
+   },
+   {
+      "name": "CCK06092 2 FRONT Original Brake",
+      "price": 25,
+      "category": "Brakes",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/CCK06092 2 FRONT Original Brake Calipers + 2 OE Rotors + Ceramic Pads + Hardware.jpg"
+   },
+   {
+      "name": "Front and Rear Carbon Fiber",
+      "price": 25,
+      "category": "Brakes",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Front and Rear Carbon Fiber Brake Pads Kawasaki and Suzuki.jpg"
+   },
+   {
+      "name": "HIAORS Front & Rear Brake",
+      "price": 25,
+      "category": "Brakes",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/HIAORS Front & Rear Brake Pads for Pit Dirt Bike Motorcycle.jpg"
+   },
+   {
+      "name": "Polaris 800 Sportsman 4X4 Rear",
+      "price": 25,
+      "category": "Brakes",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Polaris 800 Sportsman 4X4 Rear Brakes Brake Pads.jpg"
+   },
+   {
+      "name": "Rear Foot Brake  Cylinder Pump Silver",
+      "price": 25,
+      "category": "Brakes",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Rear Foot Brake  Cylinder Pump Silver For Motorbike Atv Dirt Bike Black.jpg"
+   },
+   {
+      "name": "125cc Engine 4 Stroke Motor",
+      "price": 25,
+      "category": "Engine",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/125cc Engine 4 Stroke Motor Single cylinder For Honda.jpg"
+   },
+   {
+      "name": "DuroMax XP18HPE 440cc Recoil or",
+      "price": 25,
+      "category": "Engine",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/DuroMax XP18HPE 440cc Recoil or Electric Start Gas Powered Multi-Use Engine.jpg"
+   },
+   {
+      "name": "FCFL 250cc ATV Engine 4-Stroke",
+      "price": 25,
+      "category": "Engine",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/FCFL 250cc ATV Engine 4-Stroke Motor Single Manual Transmission.jpg"
+   },
+   {
+      "name": "TBVECHI 49CC Mini Motorcycle",
+      "price": 25,
+      "category": "Engine",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/TBVECHI 49CC Mini Motorcycle Engine, 2-Stroke Pull Start Engine Motor Unit.jpg"
+   },
+
+   {
+      "name": "FVRITO 28mm Exhaust Muffler Silencer",
+      "price": 25,
+      "category": "Exhaust",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/FVRITO 28mm Exhaust Muffler Silencer Pipe and Clamp Gasket.jpg"
+   },
+   {
+      "name": "HIAORS Pit Dirt Bike Exhaust",
+      "price": 25,
+      "category": "Exhaust",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/HIAORS Pit Dirt Bike Exhaust Crush Gasket.jpg"
+   },
+   {
+      "name": "Red 28mm Motorcycle Exhaust Muffler",
+      "price": 25,
+      "category": "Exhaust",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Red 28mm Motorcycle Exhaust Muffler.jpg"
+   },
+   {
+      "name": "Universal 1.5 Inch Inlet",
+      "price": 25,
+      "category": "Exhaust",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Universal 1.5 Inch Inlet Exhaust Muffler With Removable DB.jpg"
+   },
+   {
+      "name": "ZHUOTOP Fat Belly Pipe Exhaust",
+      "price": 25,
+      "category": "Exhaust",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/ZHUOTOP Fat Belly Pipe Exhaust Muffler.jpg"
+   },
+   {
+      "name": "Legends Revo-A Adjustable Coil",
+      "price": 25,
+      "category": "Suspension",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Legends Revo-A Adjustable Coil Suspension 13 inch.jpg"
+   },
+   {
+      "name": "Motorcycle Air Shock Absorbers for",
+      "price": 25,
+      "category": "Suspension",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Motorcycle Air Shock Absorbers for Honda Suzuki Yamaha Kawasaki 14 inch.jpg"
+   },
+   {
+      "name": "Possbay Motorcycle Shock Motorcycle Rear",
+      "price": 25,
+      "category": "Suspension",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Possbay Motorcycle Shock Motorcycle Rear Shock 15.7 inch.jpg"
+   },
+   {
+      "name": "Possbay Motorcycle Shock Motorcycle Rear",
+      "price": 25,
+      "category": "Suspension",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Possbay Motorcycle Shock Motorcycle Rear Shock 267mm.jpg"
+   },
+   {
+      "name": "Progressive Suspension Burley Slammer 10",
+      "price": 25,
+      "category": "Suspension",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Progressive Suspension Burley Slammer 10.5 Inch Shocks for Harley-Davidson.jpg"
+   },
+   {
+      "name": "Gel Pad Seat Cushion for Motorcycles",
+      "price": 25,
+      "category": "Seats",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Gel Pad Seat Cushion for Motorcycles with Memory Foam.jpg"
+   },
+   {
+      "name": "Hammock Driver Passenger Seat For",
+      "price": 25,
+      "category": "Seats",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Hammock Driver Passenger Seat For Harley.jpg"
+   },
+   {
+      "name": "Mustang Motorcycle Seats 76981 One",
+      "price": 25,
+      "category": "Seats",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/Mustang Motorcycle Seats 76981 One-Piece Seat.jpg"
+   },
+   {
+      "name": "One-Piece 2 up Bucket Seat",
+      "price": 25,
+      "category": "Seats",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/One-Piece 2 up Bucket Seat Motorcycle Driver Passenger Seat Fit For Harley.jpg"
+   },
+   {
+      "name": "RIDER Motorcycle Driver Passenger Seat",
+      "price": 25,
+      "category": "Seats",
+      "color": "blue",
+      "part#": "XD1234",
+      "cover": "./BikeInfo/Images/Products/RIDER Motorcycle Driver Passenger Seat.jpg"
+   }
+]

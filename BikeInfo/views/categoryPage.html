@@ -1,0 +1,21 @@
+<div>
+   <h2 style="text-align: center; padding-top: 20px">{{title}}</h2>
+   <section class="products">
+      <div
+         class="product"
+         ng-repeat="category in detail"
+         ng-controller="ProductsController"
+      >
+         <img
+            ng-src="{{category.cover}}"
+            width="200px"
+            height="200px"
+            ng-click="pushItem(category)"
+            style="object-fit: contain"
+         />
+
+         <p class="title">{{ category.name }}</p>
+         <p class="price">{{ category.price | currency }}</p>
+      </div>
+   </section>
+</div>
