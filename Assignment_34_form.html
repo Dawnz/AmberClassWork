@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body {
+            display: grid;
+            justify-content: space-around;
+            /* gap: 30px; */
+            /* padding: 0 100px; */
+            height: 100vh;
+            border: 1px solid black;
+            text-align: center;
+            background-color: #f6f4e8;
+            overflow: hidden;
+         }
+         .image-upload {
+            display: grid;
+            justify-content: right;
+            align-content: center;
+         }
+         #display_image {
+            width: 211px;
+            height: 211px;
+            border: 1px solid black;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+         }
+         .personal-info,
+         .user-names,
+         .parents-guardians,
+         .misc {
+            display: grid;
+         }
+         .user-names {
+            grid-auto-flow: column;
+            /* width: 100%; */
+            min-height: 12vh;
+            justify-content: space-between;
+            align-items: flex-end;
+         }
+         .parents-guardians {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            column-gap: 40px;
+            min-height: 12vh;
+            justify-items: flex-start;
+
+            align-items: center;
+         }
+         input {
+            mix-blend-mode: darken;
+            padding: 2px;
+            height: 3vh;
+            border-radius: groove 4px;
+         }
+
+         .misc {
+            grid-auto-flow: column;
+            /* width: 100%; */
+            justify-content: space-between;
+            justify-items: flex-end;
+            min-height: 12vh;
+
+            grid-template-rows: 1fr 1fr;
+         }
+         .address {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 8.5% 91.5%;
+            width: 100%;
+            min-height: 6vh;
+            justify-self: left;
+            /* align-self: center; */
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Things to do
+        
+        Admission Form will contain:
+        1. Picture of the candidate,
+        2. Name of the candidate,
+        3. Father’s name of the candidate,
+        4. Mother’s name of the candidate,
+        5. Guardian’s name and relation to the candidate,
+        6. Caste/ religion of the candidate,
+        7. Nationality of the candidate,
+        8. Mother-tongue of the candidate,
+        9. Address of the candidate,
+        10. Highest academic qualification of the candidate
+        
+    -->
+
+      <form>
+         <h1 style="text-align: center">User Registration Form</h1>
+         <div style="display: flex; justify-content: space-around">
+            <img
+               src="./SchoolInfo/Dawnz Academy.png"
+               width="211px"
+               height="211px"
+               alt="logo"
+            />
+            <section class="image-upload">
+               <input
+                  type="file"
+                  name="imgUploader"
+                  id="image_input"
+                  accept="image/pmg, image/jpg"
+                  style="display: none"
+               />
+               <div id="display_image"></div>
+               <label for="image_input">
+                  Click here to select Profile Picture
+               </label>
+            </section>
+         </div>
+         <section class="personal-info">
+            <div class="user-names">
+               <div>
+                  <label for="fname">First Name:</label>
+                  <input type="text" placeholder="Enter Your First Name " />
+               </div>
+               <div>
+                  <label for="lname">Last Name:</label>
+                  <input type="text" placeholder="Enter Your Last Name " />
+               </div>
+            </div>
+
+            <div class="parents-guardians">
+               <div>
+                  <label for="father">Father's Name:</label>
+                  <input type="text" placeholder="Enter Your Father's Name " />
+               </div>
+
+               <div>
+                  <label for="mother">Mother's Name:</label>
+                  <input type="text" placeholder="Enter Your Mother's Name " />
+               </div>
+               <div>
+                  <label for="Guardian">Guardian's Name:</label>
+                  <input type="text" placeholder="Enter Your Guardian " />
+               </div>
+            </div>
+            <div class="misc">
+               <div>
+                  <label for="religion">Religion:</label>
+                  <input type="text" placeholder="Enter Your Religion " />
+               </div>
+
+               <div>
+                  <label for="nationality">Nationality:</label>
+                  <input type="text" placeholder="Enter Your Nationality " />
+               </div>
+
+               <div>
+                  <label for="mother-tongue">Mother's Tongue:</label>
+                  <input type="text" placeholder="Enter Your Native Language" />
+               </div>
+
+               <div>
+                  <label for="academic">Highest Qualification:</label>
+                  <input
+                     type="text"
+                     placeholder="Enter Your Highest Qualification"
+                  />
+               </div>
+            </div>
+            <div class="address">
+               <label for="address">Address:</label>
+               <input type="text" placeholder="Enter Your  Address " />
+            </div>
+         </section>
+         <button type="submit" style="margin-top: 12px">Submit</button>
+      </form>
+      <script src="./imageDisplay.js"></script>
+   </body>
+</html>

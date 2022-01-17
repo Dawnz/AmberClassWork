@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script
+         src="https://kit.fontawesome.com/34e1afac79.js"
+         crossorigin="anonymous"
+      ></script>
+      <link
+         rel="shortcut icon"
+         href="./SchoolInfo/favicon.ico"
+         type="image/x-icon"
+      />
+      <link rel="stylesheet" href="./Assignment34.css" />
+      <title>Dawnz Academy</title>
+   </head>
+   <body>
+      <div class="container">
+         <header>
+            <nav class="navbar">
+               <img
+                  class="logo"
+                  src="./SchoolInfo/Dawnz Academy.png"
+                  alt="logo"
+               />
+               <ul class="navbar-links">
+                  <li>
+                     ACADEMICS
+                     <ul class="navbar-content academics">
+                        <li>Academic Guidance</li>
+                        <li>Career Pathways</li>
+                        <li>Internship Programme</li>
+                        <li>Special Education</li>
+                     </ul>
+                  </li>
+                  <li>
+                     LIFE ON CAMPUS
+                     <ul class="navbar-content acad-life">
+                        <li>Clubs and Activities</li>
+                        <li>Athletics</li>
+                        <li>Dormatory Information</li>
+                        <li>Library Information</li>
+                     </ul>
+                  </li>
+
+                  <li>
+                     ABOUT
+                     <ul class="navbar-content about">
+                        <li>Mission and History</li>
+                        <li>Head of School</li>
+                        <li>Rules and Regulations</li>
+                     </ul>
+                  </li>
+                  <li>
+                     CONTACT US
+                     <ul class="navbar-content contact">
+                        <li>General Inqueries</li>
+                        <li>Staff Directory</li>
+                        <li>Join our Team</li>
+                     </ul>
+                  </li>
+               </ul>
+
+               <ul class="socials">
+                  <li><i class="fab fa-facebook-square fa-lg"> </i></li>
+                  <li><i class="fab fa-twitter-square fa-lg"> </i></li>
+                  <li><i class="fab fa-instagram-square fa-lg"> </i></li>
+                  <!-- <li><i class="fab fa-google-plus-square"> </i></li> -->
+                  <li><i class="fab fa-linkedin fa-lg"></i></li>
+                  <!-- <li><i class="fab fa-github-square"> </i></li> -->
+               </ul>
+
+               <div class="btn-enroll">
+                  <form action="Assignment_34_form.html">
+                     <button>ENROLL</button>
+                  </form>
+               </div>
+            </nav>
+         </header>
+         <section class="main-content">
+            <h1 style="text-align: center">Welcome to Dawnz Academy</h1>
+            <h3 style="text-align: center">Believe in yourself</h3>
+            <section class="cover">
+               <a class="prev">&#10094;</a>
+               <a class="next">&#10095;</a>
+               <div class="mySlides fade">
+                  <img
+                     src="./schoolinfo/images/wallpaper1.jpg"
+                     alt="wallpaper1"
+                  />
+                  <h2 class="fade slide-text">
+                     We offer a wide diversity of courses
+                  </h2>
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./schoolinfo/images/wallpaper3.jpg"
+                     alt="wallpaper3"
+                  />
+                  <h2 class="fade slide-text">
+                     Join us for a one of a kind experience
+                  </h2>
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./schoolinfo/images/wallpaper2.jpg"
+                     alt="wallpaper2"
+                  />
+                  <h2 class="fade slide-text">
+                     We offer world class resources to our students
+                  </h2>
+               </div>
+
+               <div class="mySlides fade">
+                  <img
+                     src="./schoolinfo/images/wallpaper4.jpg"
+                     alt="wallpaper4"
+                  />
+                  <h2 class="fade slide-text">
+                     Make your dreams a reality at Dawnz Academy
+                  </h2>
+               </div>
+               <div class="mySlides fade">
+                  <img
+                     src="./schoolinfo/images/wallpaper5.jpg"
+                     alt="wallpaper5"
+                  />
+                  <h2 class="fade slide-text">
+                     We believe in you! Believe in yourself.
+                  </h2>
+               </div>
+            </section>
+         </section>
+         <footer></footer>
+      </div>
+      <script>
+         var slideIndex = 0;
+         showSlides();
+
+         function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            // var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+               slideIndex = 1;
+            }
+            // for (i = 0; i < dots.length; i++) {
+            //    dots[i].className = dots[i].className.replace(" active", "");
+            // }
+            slides[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+         }
+      </script>
+   </body>
+</html>
